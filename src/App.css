@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {/* mobile */
+ 
+}
+
+@media only screen and (min-width: 768px) {/* non-mobile */
+}
+.px25{font-size:25px;}
+.px20{font-size:20px;}
+.px10{font-size: 10px;}
+.px15{font-size: 15px;}
+.padding5{padding:5px;}
+.padding15{padding:15px;}
+.padding10{padding:10px;}
+.sqr50{ 
+    width:50px;
+}
+.noBorder{border:none !important;}
+.gravityCenter{/*    */
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} 
+
+.rounded{border-radius: 50px}
+.center{text-align:center !important}
+.whiteBg{background-color: white;margin-left:0px !important;}
+.paddingT25{padding:15px !important;}
+.padding50{padding:30px}
+.padding40{padding:40px}
+#LoadingScreen{
+  background-color:white !important;
+  z-index: 999;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  /*color:black;*/
+}
+.LoadingScreenText{
+
+  position: absolute;
+  top:0;  
+  left: 0;
+  right: 0;
+  margin-top:20px;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #101820ff; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: auto;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+table td, table th{vertical-align: middle !important}
+.demo:empty {
+    margin: auto;
+    width: 500px;
+    height: 120px; /* change height to see repeat-y behavior */
+    
+    background-image:
+      radial-gradient( circle 50px at 50px 50px, lightgray 99%, transparent 0 ),
+      linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+      linear-gradient( lightgray 70px, transparent 0 );
+
+    background-repeat: repeat-y;
+
+    background-size:
+      100px 200px, /* circle */
+      50px 200px, /* highlight */
+                        250px 100px;
+
+    background-position:
+      0 6, /* circle */
+      0 0, /* highlight */
+      120px 120px;
+
+    animation: shine 1s infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position:
+        0 6,
+        100% 0, /* move highlight to right */
+        120px 120px;
+    }
+  }
